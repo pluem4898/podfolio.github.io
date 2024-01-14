@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Pluem Portfolio</title>
 </head>
 <body>
   <style>
     * {
-      margin: 0px ;
-    }
-    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+    margin: 0px ;
+    scroll-behavior: smooth
+  }
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  font-size: 10px;
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -27,134 +28,134 @@ body {
 /* Navbar section */
 
 .nav {
-    width: 100%;
-    height: 65px;
-    position: fixed;
-    line-height: 65px;
-    text-align: center;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
 }
 
 .nav div.logo {
-    float: left;
-    width: auto;
-    height: auto;
-    padding-left: 3rem;
+  float: left;
+  width: auto;
+  height: auto;
+  padding-left: 3rem;
 }
 
 .nav div.logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
 }
 
 .nav div.logo a:hover {
-    color: #00E676;
+  color: #00E676;
 }
 
 .nav div.main_list {
-    height: 65px;
-    float: right;
+  height: 65px;
+  float: right;
 }
 
 .nav div.main_list ul {
-    width: 100%;
-    height: 65px;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav div.main_list ul li {
-    width: auto;
-    height: 65px;
-    padding: 0;
-    padding-right: 3rem;
+  width: auto;
+  height: 65px;
+  padding: 0;
+  padding-right: 3rem;
 }
 
 .nav div.main_list ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 65px;
-    font-size: 2.4rem;
+  text-decoration: none;
+  color: #fff;
+  line-height: 65px;
+  font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+  color: #00E676;
 }
 
 
 /* Home section */
 
 .home {
-    width: 100%;
-    height: 100vh;
-    background-image: url();
-    background-position: center top;
-	background-size:cover;
-  background-color: #252525;
+  width: 100%;
+  height: 100vh;
+  background-image: url();
+  background-position: center top;
+  background-size:cover;
+background-color: #252525;
 }
 
 .navTrigger {
-    display: none;
+  display: none;
 }
 
 .nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 
 /* Media qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        margin: 0;
-    }
+  .container {
+      margin: 0;
+  }
 }
 
 @media screen and (max-width:768px) {
-    .navTrigger {
-        display: block;
-    }
-    .nav div.logo {
-        margin-left: 15px;
-    }
-    .nav div.main_list {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-    .nav div.show_list {
-        height: auto;
-        display: none;
-    }
-    .nav div.main_list ul {
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
-    }
-    .nav div.main_list ul li {
-        width: 100%;
-        text-align: right;
-    }
-    .nav div.main_list ul li a {
-        text-align: center;
-        width: 100%;
-        font-size: 3rem;
-        padding: 20px;
-    }
-    .nav div.media_button {
-        display: block;
-    }
+  .navTrigger {
+      display: block;
+  }
+  .nav div.logo {
+      margin-left: 15px;
+  }
+  .nav div.main_list {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+  }
+  .nav div.show_list {
+      height: auto;
+      display: none;
+  }
+  .nav div.main_list ul {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #111;
+      /*same background color of navbar*/
+      background-position: center top;
+  }
+  .nav div.main_list ul li {
+      width: 100%;
+      text-align: right;
+  }
+  .nav div.main_list ul li a {
+      text-align: center;
+      width: 100%;
+      font-size: 3rem;
+      padding: 20px;
+  }
+  .nav div.media_button {
+      display: block;
+  }
 }
 
 
@@ -162,197 +163,198 @@ body {
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    margin: auto;
-    position: absolute;
-    right: 30px;
-    top: 0;
-    bottom: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin: auto;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
 }
 
 .navTrigger i {
-    background-color: #fff;
-    border-radius: 2px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
 }
 
 .navTrigger i:nth-child(1) {
-    -webkit-animation: outT 0.8s backwards;
-    animation: outT 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
+  -webkit-animation: outT 0.8s backwards;
+  animation: outT 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
 .navTrigger i:nth-child(2) {
-    margin: 5px 0;
-    -webkit-animation: outM 0.8s backwards;
-    animation: outM 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
+  margin: 5px 0;
+  -webkit-animation: outM 0.8s backwards;
+  animation: outM 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
 .navTrigger i:nth-child(3) {
-    -webkit-animation: outBtm 0.8s backwards;
-    animation: outBtm 0.8s backwards;
-    -webkit-animation-direction: reverse;
-    animation-direction: reverse;
+  -webkit-animation: outBtm 0.8s backwards;
+  animation: outBtm 0.8s backwards;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
 .navTrigger.active i:nth-child(1) {
-    -webkit-animation: inT 0.8s forwards;
-    animation: inT 0.8s forwards;
+  -webkit-animation: inT 0.8s forwards;
+  animation: inT 0.8s forwards;
 }
 
 .navTrigger.active i:nth-child(2) {
-    -webkit-animation: inM 0.8s forwards;
-    animation: inM 0.8s forwards;
+  -webkit-animation: inM 0.8s forwards;
+  animation: inM 0.8s forwards;
 }
 
 .navTrigger.active i:nth-child(3) {
-    -webkit-animation: inBtm 0.8s forwards;
-    animation: inBtm 0.8s forwards;
+  -webkit-animation: inBtm 0.8s forwards;
+  animation: inBtm 0.8s forwards;
 }
 
 @-webkit-keyframes inM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
+  50% {
+      -webkit-transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(45deg);
+  }
 }
 
 @keyframes inM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
+  50% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(45deg);
+  }
 }
 
 @-webkit-keyframes outM {
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(45deg);
-    }
+  50% {
+      -webkit-transform: rotate(0deg);
+  }
+  100% {
+      -webkit-transform: rotate(45deg);
+  }
 }
 
 @keyframes outM {
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg);
-    }
+  50% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(45deg);
+  }
 }
 
 @-webkit-keyframes inT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
+  0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+      -webkit-transform: translateY(9px) rotate(135deg);
+  }
 }
 
 @keyframes inT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
+  0% {
+      transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+      transform: translateY(9px) rotate(135deg);
+  }
 }
 
 @-webkit-keyframes outT {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(9px) rotate(135deg);
-    }
+  0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      -webkit-transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+      -webkit-transform: translateY(9px) rotate(135deg);
+  }
 }
 
 @keyframes outT {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(9px) rotate(135deg);
-    }
+  0% {
+      transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      transform: translateY(9px) rotate(0deg);
+  }
+  100% {
+      transform: translateY(9px) rotate(135deg);
+  }
 }
 
 @-webkit-keyframes inBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
+  0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+      -webkit-transform: translateY(-9px) rotate(135deg);
+  }
 }
 
 @keyframes inBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
+  0% {
+      transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+      transform: translateY(-9px) rotate(135deg);
+  }
 }
 
 @-webkit-keyframes outBtm {
-    0% {
-        -webkit-transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        -webkit-transform: translateY(-9px) rotate(135deg);
-    }
+  0% {
+      -webkit-transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      -webkit-transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+      -webkit-transform: translateY(-9px) rotate(135deg);
+  }
 }
 
 @keyframes outBtm {
-    0% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-9px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-9px) rotate(135deg);
-    }
+  0% {
+      transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+      transform: translateY(-9px) rotate(0deg);
+  }
+  100% {
+      transform: translateY(-9px) rotate(135deg);
+  }
 }
 
 .affix {
-    padding: 0;
-    opacity: calc(0.8);
+  padding: 0;
+  opacity: calc(0.8);
+  z-index: 999;
 }
 
 
@@ -361,108 +363,230 @@ body {
 
 
 .myH2 {
-	text-align:center;
-	font-size: 4rem;
+  text-align:center;
+  font-size: 4rem;
 }
 .myP {
-	text-align: justify;
-	padding-left:15%;
-	padding-right:15%;
-	font-size: 20px;
+  text-align: justify;
+  padding-left:15%;
+  padding-right:15%;
+  font-size: 20px;
 }
 @media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
+  .myP {
+      padding:2%;
+  }
 }
 
 #dynamicText {
-    animation: b1 10s infinite;
+  animation: b1 10s infinite;
+}
+
+@keyframes b1 {
+  0% {
+    opacity: 1;
+    color: greenyellow;
+  }
+  20% {
+    opacity: 1;
+    color: #00E676;
+  }
+  50% {
+      color: #2eec6d;
   }
 
-  @keyframes b1 {
-    0% {
+  70% {
+      color: #7cda57;
+  }
+
+  100% {
       opacity: 1;
       color: greenyellow;
-    }
-    20% {
-      opacity: 1;
-      color: #00E676;
-    }
-    50% {
-        color: #2eec6d;
-    }
-
-    70% {
-        color: #7cda57;
-    }
-
-    100% {
-        opacity: 1;
-        color: greenyellow;
-    }
   }
+}
 
-  #about {
+#about {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-color: #252525;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.skill {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skillh2 {
+  font-size: 50px;
+  padding-top: 200px;
+}
+
+/* Adjust the width based on your proficiency level (e.g., 80% width for 80% proficiency) */
+.html-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #ff5f03; /* Set the progress bar color */
+  transition: width 1s ease; /* Animation effect */
+}
+
+.css-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #0099e0; /* Set the progress bar color */
+  transition: width 1s ease; /* Animation effect */
+}
+
+.js-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #e6a900; /* Set the progress bar color */
+  transition: width 1s ease; /* Animation effect */
+}
+
+.php-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #7100db; /* Set the progress bar color */
+  transition: width 1s ease; /* Animation effect */
+}
+
+#portfolio {
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-color: #252525;
   }
+
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #252525;
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #252525;
+    position: relative;
+    overflow: hidden; /* Hide vertical scroll bar */
+  }
   
-  .skills-container {
+  .portfolio-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .portfolio-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit browsers */
+  }
+  
+  .portfolio-item {
+    display: flex;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-size: 10rem;
+  }
+  
+  .navigation-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10rem;
+    color: #fff;
+  }
+  
+  .navigation-arrows span {
+    cursor: pointer;
+  }
+
+  #contact {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
     color: #fff;
+    font-size: 3rem;
   }
   
-  .skill {
-    margin-top: 60px;
-    margin-bottom: 20px;
+  #contactForm {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
   }
   
-  .progress-bar {
-    width: 100%;
-    height: 30px;
-    background-color: #333;
+  label {
+    margin-top: 10px;
+    color: #00E676;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #00E676;
     border-radius: 5px;
-    overflow: hidden;
   }
   
-  .skillh2 {
-    font-size: 50px;
-    padding-top: 200px;
+  button {
+    padding: 10px;
+    background-color: #00E676;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
-  /* Adjust the width based on your proficiency level (e.g., 80% width for 80% proficiency) */
-  .html-progress {
-    width: 0%;
-    height: 100%;
-    background-color: #ff5f03; /* Set the progress bar color */
-    transition: width 1s ease; /* Animation effect */
+  button:hover {
+    background-color: #09ff00;
   }
   
-  .css-progress {
-    width: 0%;
-    height: 100%;
-    background-color: #0099e0; /* Set the progress bar color */
-    transition: width 1s ease; /* Animation effect */
+  .contact-info {
+    margin-top: 20px;
   }
-
-  .js-progress {
-    width: 0%;
-    height: 100%;
-    background-color: #e6a900; /* Set the progress bar color */
-    transition: width 1s ease; /* Animation effect */
-  }
-
-  .php-progress {
-    width: 0%;
-    height: 100%;
-    background-color: #7100db; /* Set the progress bar color */
-    transition: width 1s ease; /* Animation effect */
-  }
+  
+  /* Add any additional styling as needed */
+  
+  
+  
   </style>
   <nav class="nav">
     <div class="container">
@@ -471,6 +595,7 @@ body {
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
+                <li><a href="#home" id="dynamicText" >Home</a></li>
                 <li><a href="#about" id="dynamicText" >About</a></li>
                 <li><a href="#portfolio" id="dynamicText">Portfolio</a></li>
                 <li><a href="#contact" id="dynamicText">Contact</a></li>
@@ -515,7 +640,56 @@ body {
     </div>
   </div>
 </div>
+<div id="portfolio">
+  <div class="portfolio-container">
+    <div class="portfolio-item">NO HAVE 1</div>
+    <div class="portfolio-item">NO HAVE 2</div>
+    <div class="portfolio-item">NO HAVE 3</div>
+    <div class="portfolio-item">NO HAVE 4</div>
+    <div class="portfolio-item">NO HAVE 5</div>
+    <div class="portfolio-item">NO HAVE 6</div>
+  </div>
+  <div class="navigation-arrows">
+    <span class="prev-arrow" onclick="changePortfolioItem('prev')">&#10094;</span>
+    <span class="next-arrow" onclick="changePortfolioItem('next')">&#10095;</span>
+  </div>
+</div>
 
+<div id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out! Fill in the form below or use the contact information.</p>
+
+    <form id="contactForm" action="your-server-endpoint-for-email.php" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>
+        <i class="fa-brands fa-github"><a href=""></a></i>
+      </p>
+      <p>
+        <i class="fab fa-discord"><a href=""></a></i>
+      </p>
+      <p>
+        <i class="fab fa-instagram"><a href=""></a></i>
+      </p>
+      <p>
+        <i class="fab fa-facebook"><a href=""></a></i>
+      </p>
+      <!-- Add any other contact information with appropriate icons -->
+    </div>
+  </div>
+</div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
@@ -594,7 +768,7 @@ $(document).ready(function() {
         {
           width: width
         },
-        50 // Adjust the duration as needed
+        100 // Adjust the duration as needed
       );
     }
   
@@ -604,7 +778,27 @@ $(document).ready(function() {
     animateProgressBar("#php-progress", "5%");
   });
 
-  
+  let currentIndex = 0;
+
+function changePortfolioItem(direction) {
+  const container = document.querySelector('.portfolio-container');
+  const items = document.querySelectorAll('.portfolio-item');
+  const itemWidth = items[0].offsetWidth;
+
+  if (direction === 'next' && currentIndex < items.length - 1) {
+    currentIndex++;
+  } else if (direction === 'prev' && currentIndex > 0) {
+    currentIndex--;
+  }
+
+  container.scrollTo({
+    left: currentIndex * itemWidth,
+    behavior: 'smooth'
+  });
+}
+
+
+    
   </script>
   
 </body>
