@@ -21,6 +21,9 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 62.5%;
   font-size: 10px;
+  background: url('path-to-your-star-image.jpg') fixed;
+  background-size: cover;
+  z-index: 2;
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -378,30 +381,59 @@ background-color: #252525;
   }
 }
 
-#dynamicText {
-  animation: b1 10s infinite;
+#submitrgb {
+  animation: s1 20s infinite;
 }
 
-@keyframes b1 {
+@keyframes s1 {
   0% {
     opacity: 1;
-    color: greenyellow;
+    background-color: rgb(212, 0, 149);
   }
   20% {
     opacity: 1;
-    color: #00E676;
+    background-color: #ff1fec;
   }
   50% {
-      color: #2eec6d;
+    background-color: #9a00a8;
   }
 
   70% {
-      color: #7cda57;
+    background-color: #6d00fc;
   }
 
   100% {
       opacity: 1;
-      color: greenyellow;
+      background-color: rgb(212, 0, 149);
+  }
+}
+
+#dynamicText {
+  animation: b1 20s infinite;
+}
+
+
+
+@keyframes b1 {
+  0% {
+    opacity: 1;
+    color: rgb(212, 0, 149);
+  }
+  20% {
+    opacity: 1;
+    color: #ff1fec;
+  }
+  50% {
+      color: #9a00a8;
+  }
+
+  70% {
+      color: #6d00fc;
+  }
+
+  100% {
+      opacity: 1;
+      color: rgb(212, 0, 149);
   }
 }
 
@@ -430,6 +462,7 @@ background-color: #252525;
   background-color: #333;
   border-radius: 5px;
   overflow: hidden;
+  z-index: 10;
 }
 
 .skillh2 {
@@ -465,13 +498,6 @@ background-color: #252525;
   background-color: #7100db; /* Set the progress bar color */
   transition: width 1s ease; /* Animation effect */
 }
-
-#portfolio {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-color: #252525;
-  }
 
   #contact {
     width: 100%;
@@ -564,6 +590,7 @@ background-color: #252525;
     margin: 8px 0;
     border: 1px solid #00E676;
     border-radius: 5px;
+    z-index: 10;
   }
   
   button {
@@ -573,6 +600,7 @@ background-color: #252525;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 10;
   }
   
   button:hover {
@@ -585,109 +613,136 @@ background-color: #252525;
   
   /* Add any additional styling as needed */
   
-  
+  .star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+  animation: star1 10s infinite;
+}
+
+@keyframes star1 {
+  0% {
+    background-color: #555555;
+  }
+
+  50% {
+    background-color: #a5a5a5;
+  }
+
+  100% {
+    background-color: #555555;
+  }
+}
+
   
   </style>
-  <nav class="nav">
-    <div class="container">
-        <div class="logo">
-          <a href="#home" id="dynamicText">PHATTAR<span id="cursor">_</span></a>
-        </div>
-        <div id="mainListDiv" class="main_list">
-            <ul class="navlinks">
-                <li><a href="#home" id="dynamicText" >Home</a></li>
-                <li><a href="#about" id="dynamicText" >About</a></li>
-                <li><a href="#portfolio" id="dynamicText">Portfolio</a></li>
-                <li><a href="#contact" id="dynamicText">Contact</a></li>
-            </ul>
-        </div>
-        <span class="navTrigger">
-            <i></i>
-            <i></i>
-            <i></i>
-        </span>
-    </div>
-</nav>
+  <div id="star-field">
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+            <a href="#home" id="dynamicText">PHATTAR<span id="cursor">_</span></a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#home" id="dynamicText" >Home</a></li>
+                  <li><a href="#about" id="dynamicText" >About</a></li>
+                  <li><a href="#portfolio" id="dynamicText">Portfolio</a></li>
+                  <li><a href="#contact" id="dynamicText">Contact</a></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
 
-<section class="home" id="home">
-</section>
-<div id="about">
-  <div class="skills-container">
-    <h2 class="skillh2">Skills code</h2>
-    <div class="skill">
-      <p>HTML</p>
-      <div class="progress-bar">
-        <div class="html-progress" id="html-progress"></div>
+  <section class="home" id="home">
+  </section>
+  <div id="star-field">
+  <div id="about">
+    <div class="skills-container">
+      <h2 class="skillh2">Skills code</h2>
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar">
+          <div class="html-progress" id="html-progress"></div>
+        </div>
       </div>
-    </div>
-    <div class="skill">
-      <p>CSS</p>
-      <div class="progress-bar">
-        <div class="css-progress" id="css-progress"></div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar">
+          <div class="css-progress" id="css-progress"></div>
+        </div>
       </div>
-    </div>
-    <div class="skill">
-      <p>Javascript</p>
-      <div class="progress-bar">
-        <div class="js-progress" id="js-progress"></div>
+      <div class="skill">
+        <p>Javascript</p>
+        <div class="progress-bar">
+          <div class="js-progress" id="js-progress"></div>
+        </div>
       </div>
-    </div>
-    <div class="skill">
-      <p>PHP</p>
-      <div class="progress-bar">
-        <div class="php-progress" id="php-progress"></div>
+      <div class="skill">
+        <p>PHP</p>
+        <div class="progress-bar">
+          <div class="php-progress" id="php-progress"></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div id="portfolio">
-  <div class="portfolio-container">
-    <div class="portfolio-item">NO HAVE 1</div>
-    <div class="portfolio-item">NO HAVE 2</div>
-    <div class="portfolio-item">NO HAVE 3</div>
-    <div class="portfolio-item">NO HAVE 4</div>
-    <div class="portfolio-item">NO HAVE 5</div>
-    <div class="portfolio-item">NO HAVE 6</div>
+  <div id="portfolio">
+    <div class="portfolio-container">
+      <div class="portfolio-item">NO HAVE 1</div>
+      <div class="portfolio-item">NO HAVE 2</div>
+      <div class="portfolio-item">NO HAVE 3</div>
+      <div class="portfolio-item">NO HAVE 4</div>
+      <div class="portfolio-item">NO HAVE 5</div>
+      <div class="portfolio-item">NO HAVE 6</div>
+    </div>
+    <div class="navigation-arrows">
+      <span class="prev-arrow" onclick="changePortfolioItem('prev')">&#10094;</span>
+      <span class="next-arrow" onclick="changePortfolioItem('next')">&#10095;</span>
+    </div>
   </div>
-  <div class="navigation-arrows">
-    <span class="prev-arrow" onclick="changePortfolioItem('prev')">&#10094;</span>
-    <span class="next-arrow" onclick="changePortfolioItem('next')">&#10095;</span>
-  </div>
-</div>
 
-<div id="contact">
-  <div class="contact-container">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out! Fill in the form below or use the contact information.</p>
+  <div id="contact">
+    <div class="contact-container">
+      <h2 id="dynamicText">Contact Me</h2>
+      <p>Feel free to reach out! Fill in the form below or use the contact information.</p>
 
-    <form id="contactForm" action="send-email.php" method="post">
-    <!-- Your form fields here -->
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required>
+      <form id="contactForm" action="send-email.php" method="post">
+      <!-- Your form fields here -->
+      <label for="name" id="dynamicText">Your Name</label>
+      <input type="text" id="name" name="name" required>
 
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email" id="dynamicText">Your Email</label>
+      <input type="email" id="email" name="email" required>
 
-    <label for="message">Your Message</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+      <label for="message" id="dynamicText">Your Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">Send Message</button>
-    </form>
+      <button type="submit" id="submitrgb">Send Message</button>
+      </form>
 
-    <div class="contact-info">
-      <p>
-        <i class="fa-brands fa-github"><a href=""></a></i>
-      </p>
-      <p>
-        <i class="fab fa-discord"><a href=""></a></i>
-      </p>
-      <p>
-        <i class="fab fa-instagram"><a href=""></a></i>
-      </p>
-      <p>
-        <i class="fab fa-facebook"><a href=""></a></i>
-      </p>
-      <!-- Add any other contact information with appropriate icons -->
+      <div class="contact-info">
+        <p>
+          <i class="fa-brands fa-github"><a href=""></a></i>
+        </p>
+        <p>
+          <i class="fab fa-discord"><a href=""></a></i>
+        </p>
+        <p>
+          <i class="fab fa-instagram"><a href=""></a></i>
+        </p>
+        <p>
+          <i class="fab fa-facebook"><a href=""></a></i>
+        </p>
+        <!-- Add any other contact information with appropriate icons -->
+      </div>
     </div>
   </div>
 </div>
@@ -798,8 +853,21 @@ function changePortfolioItem(direction) {
   });
 }
 
+// Add this inside the document ready function or at the end of your script
+document.addEventListener('DOMContentLoaded', function() {
+  const starField = document.getElementById('star-field');
+  const numStars = 500;
 
-    
+  for (let i = 0; i < numStars; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.left = `${Math.random() * 99}vw`;
+    star.style.top = `${Math.random() * 400}vh`;
+    star.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+    starField.appendChild(star);
+  }
+});
+
   </script>
   
 </body>
