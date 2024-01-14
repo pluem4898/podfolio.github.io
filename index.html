@@ -9,11 +9,6 @@
 <body>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-
-* {
-    margin: 0px;
-}
-
 html,
 body {
     margin: 0;
@@ -23,6 +18,10 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
 
 .nav {
     width: 100%;
@@ -87,10 +86,9 @@ body {
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
     background-position: center top;
 	background-size:cover;
-    background-color: #252525;
 }
 
 .navTrigger {
@@ -98,8 +96,8 @@ body {
 }
 
 .nav {
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
@@ -350,8 +348,7 @@ body {
 
 .affix {
     padding: 0;
-    filter: blur(1);
-    margin-left: 0px;
+    opacity: calc(0.8);
 }
 
 
@@ -518,7 +515,7 @@ body {
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
-  <script>
+  <script src="script.js">
     $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
         $('.nav').addClass('affix');
@@ -526,6 +523,14 @@ body {
     } else {
         $('.nav').removeClass('affix');
     }
+});
+
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
 });
 
 
@@ -595,50 +600,7 @@ $(document).ready(function() {
     animateProgressBar("#php-progress", "5%");
   });
 
-// Smooth Scrolling for internal links
-$('a[href^="#"]').on("click",function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $("html, body").stop().animate({
-	        "scrollTop": $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-
-// Change background of nav bar on scroll
-$(window).scroll(function() {    
-  var scroll = $(window).scrollTop();
-  if (scroll > window.innerHeight - 55) {
-      $(".navbar").removeClass("transparent");
-    } else {
-      $(".navbar").addClass("transparent");
-    }
-});
-
-// Activate scrollspy to highlight nav item when scrolled over
-$("body").scrollspy({target: ".navbar"}) 
-
-// Bind events to open and close portfolio popups
-$(".thumbnail-overlay").on("click", openProject.bind( this ))
-$(".close-window").on("click", closeWindow.bind(this))
-
-function openProject( event ) {
-  if ( $(event.target).next(".thumbnail-overlay") ) {
-    var id =  "#" + $(event.target).parent().attr("page");
-    $(id).fadeIn()
-  } else {
-    var id =  "#" + $(event.target).attr("page");
-    $(id).fadeIn()
-  }
-}
-
-function closeWindow( event ) {
-  $(event.target).parents(".full-screen").fadeOut();
-}
+  
   </script>
   
 </body>
